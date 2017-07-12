@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
     if (argc != 2)
     {
-        printf("Usage: ./bsearch n\n");
+        printf("\nUsage: ./binary n\n\n");
         return 1;
     }
     
@@ -23,6 +23,15 @@ int main(int argc, char* argv[])
         toSearch[i] = j;
     }
     
+    for (int i = 1, size = sizeof(toSearch) / sizeof(int); i < size; i++)
+    {
+        if (toSearch[i] < toSearch[i - 1])
+        {
+            printf("\nError: Array elements must be numerical order, ascending.\n\n");
+            return 2;
+        }
+    }
+    
     printf("\nNumber to search for: ");
     scanf("%d", &searchee);
     
@@ -30,13 +39,13 @@ int main(int argc, char* argv[])
     int* pfound = &found;
     
     
-    if (search(searchee, toSearch, 0, sizeof(toSearch) / sizeof(n) - 1, pfound))
+    if (search(searchee, toSearch, 0, sizeof(toSearch) / sizeof(int) - 1, pfound))
     {
-        printf("\nFound %d\n", searchee);
+        printf("\nSuccess! Found %d\n\n", searchee);
     }
     else
     {
-        printf("\nDidn't find %d\n", searchee);
+        printf("\nFailure. Didn't find %d\n\n", searchee);
     }
 }
 
