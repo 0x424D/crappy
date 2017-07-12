@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
 {
     if (argc != 2)
     {
-        printf("\nUsage: ./binary n\n\n");
+        printf("\nUsage: ./bsearch n\n\n");
         return 1;
     }
     
