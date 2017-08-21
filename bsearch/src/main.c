@@ -1,5 +1,5 @@
-# Binary search algorithm. Written without referencing any pseudocode.
-# Copyright (C) 2017 0x424D (www.github.com/0x424D)
+// Binary search algorithm. Written without referencing any pseudocode.
+// Copyright (C) 2017 0x424D (www.github.com/0x424D) 
 
 #include <stdio.h>
 #include <stdlib.h>
