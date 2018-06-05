@@ -1,3 +1,6 @@
+# Quick script to convert SRT files to VTT files.
+# Copyright (C) 2018 0x424D (www.github.com/0x424D)
+
 import os.path, sys, fileinput
 from tempfile import mkstemp
 from shutil import move
