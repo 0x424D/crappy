@@ -45,6 +45,8 @@ def main():
 		replaceStr(fileName.replace(".srt", ".vtt"), "," + str(i), "." + str(i))
 		
 	remove(fileName)
+	
+	sys.exit(0)
 
 if __name__ == "__main__":
 	main()
