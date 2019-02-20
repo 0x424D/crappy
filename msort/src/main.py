@@ -1,4 +1,4 @@
-def split(L:list) -> list:
+def split(L):
 	ret = []
 	for i in L:
 		ret.append([i])
@@ -7,7 +7,7 @@ def split(L:list) -> list:
 		del ret[1]
 	return ret[0]
 	
-def merge(L1:list, L2:list) -> list:
+def merge(L1, L2):
 	for i in L2:
 		for n, j in enumerate(L1):
 			if i <= j:
