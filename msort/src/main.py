@@ -1,5 +1,5 @@
 # merge sort in python 3.x.
-# copyight (C) 0x424D 2019
+# copyright (C) 2019 0x424D (www.github.com/0x424D)
 
 import random
 
