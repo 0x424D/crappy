@@ -1,11 +1,12 @@
-# merge sort in python 3.x.
-# copyright (C) 2019 0x424D (www.github.com/0x424D)
+# merge sort implemented in python 3.x
+# copyright (C) 2018 0x424D (www.github.com/0x425D)
 
 import random
 
 def merge(L1, L2):
 	ret = []
 	
+	# while both L1 and L2 are not empty lists, decide which list head is larger, append it to ret, chop the head off and repeat
 	while L1 and L2:
 		if L1[0] <= L2[0]:
 			ret.append(L1[0])
@@ -14,6 +15,9 @@ def merge(L1, L2):
 			ret.append(L2[0])
 			L2 = L2[1:]
 	
+	# while there is a nonempty list, append each element of the list to ret
+	# nonempty list is guaranteed to have two properties: list[0] >= ret[-1]; and for i in list, list[i] <= list[i+1]
+	# therefore we can safely just append each element to ret
 	while L1:
 		ret.append(L1[0])
 		L1 = L1[1:]
