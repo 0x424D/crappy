@@ -1,5 +1,5 @@
 # merge sort implemented in python 3.x
-# copyright (C) 2018 0x424D (www.github.com/0x425D)
+# copyright (C) 2019 0x424D (www.github.com/0x425D)
 
 import random
 
