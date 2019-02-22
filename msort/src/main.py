@@ -6,7 +6,7 @@ import random
 def merge(L1, L2):
 	ret = []
 	
-	# while both L1 and L2 are not empty lists, decide which list head is larger, append it to ret, chop the head off and repeat
+	# while both L1 and L2 are not empty lists, decide which list head is smaller, append it to ret, chop the head off and repeat
 	while L1 and L2:
 		if L1[0] <= L2[0]:
 			ret.append(L1[0])
