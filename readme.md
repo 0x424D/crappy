@@ -6,4 +6,6 @@ I'll write them all without referencing any pseudocode, which is why the code wi
 
 `SRTToVTT`: quick python script to convert SRT files to VTT files
 
-`msort`: merge sort algorithm in Python 3.x.
+`msort`: merge sort algorithm in Python 3.x
+
+`cg_mmult`: a code golf (126 character) implementation of matrix multiplication in Python 3.x
