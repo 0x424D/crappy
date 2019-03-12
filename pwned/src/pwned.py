@@ -1,7 +1,8 @@
 import hashlib, sys, urllib.request
 
 def main():
-	hash = hashlib.sha1(bytes(sys.argv[1], "utf-8"))
+	password = sys.argv[1]
+	hash = hashlib.sha1(bytes(password, "utf-8"))
 	digest = hash.hexdigest().upper()
 	url = f"https://api.pwnedpasswords.com/range/{digest[:5]}"
 
@@ -13,10 +14,11 @@ def main():
 	for i in data:
 		tmp = i.split(":")
 		if digest[:5] + tmp[0] == digest:
-			print(f"{sys.argv[1]} was found")
+			print(f"{password} was found")
 			print(f"Hash {digest}, {tmp[1]} occurrences")
+			break
 	else:
-		print(f"Password {sys.argv[1]} was not found")
+		print(f"Password {password} was not found")
 			
 if __name__ == "__main__":
 	main()
