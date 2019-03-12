@@ -15,6 +15,8 @@ def main():
 		if digest[:5] + tmp[0] == digest:
 			print(f"{sys.argv[1]} was found")
 			print(f"Hash {digest}, {tmp[1]} occurrences")
+	else:
+		print(f"Password {sys.argv[1]} was not found")
 			
 if __name__ == "__main__":
 	main()
