@@ -10,4 +10,4 @@ I'll write them all without referencing any pseudocode, which is why the code wi
 
 `cg_mmult`: a code golf (107 character) implementation of matrix multiplication in Python 3.x
 
-`pwned`: Emulates the functionality of Dr. Mike Pound's script shown in the Computerphile video "Have You Been Pwned?" (full video at https://www.youtube.com/watch?v=hhUb5iknVJs).
+`pwned`: Emulates the functionality of Dr. Mike Pound's script shown in the Computerphile video "Have You Been Pwned?" (full video at https://www.youtube.com/watch?v=hhUb5iknVJs)
