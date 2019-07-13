@@ -1,3 +1,8 @@
+# pwned.py
+# This script polls the pwnedpasswords API to test whether a given password has been compromised in a data breach
+
+# Usage: py pwned.py <password>
+
 import hashlib, sys, urllib.request
 
 def main():
